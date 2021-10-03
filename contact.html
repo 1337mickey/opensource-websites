@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>CONTACT</title>
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+		<style type="text/css">
+			label {
+				font-family: sans-serif;
+			}
+
+			input[type=text], input[type=email], input[type=date], select, textarea {
+				width: 100%;
+		 		padding: 12px 20px;
+		  		margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				box-sizing: border-box;
+			}
+
+			.radio {
+				background: white;
+				width: 100%;
+				padding: 12px 20px;
+				margin-top: -4px;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				box-sizing: border-box;
+			}
+
+			input[type=submit] {
+				width: 100%;
+				background-color: #9b6dff;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				border-radius: 40px;
+				cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+				background-color: #8b6dff;
+			}
+
+			.form-cont {
+				border-radius: 3px;
+				background-color: #f2f2f2;
+				padding: 20px;
+				border: 8px outset;
+			}	
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<!--header of the our page-->
+			<header class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+				<!--Navigation bar-->
+				<div class="nav">
+					<ul>
+					 	<nav class="nav-effect">
+						<li><a href="index.html">home</a></li>
+						<li><a href="cv.html">cv</a></li>
+						<li><a href="blog.html">blog</a></li>
+						<li><a href="research.html">research</a></li>
+						<li><a class="active" href="contact.html">contact us</a></li>
+						</nav>
+					 </ul>
+				</div>
+
+				<div class="welcome">
+					<h1 class="fancy">Please fill the form below</h1>
+				</div>
+				<script src="js/script.js"></script>
+			</header>
+			<!--End of header-->
+
+			<div style="width: 100%; height: 1000px;">
+				<div class="form-cont" style="height: 900px; width: 56%; margin-top: 3%; margin-left: 20%;">
+					<form name="messageForm" onsubmit="validateForm()">
+						<p>
+							<label>First Name</label>
+							<input type="text" name="firstName" placeholder="Your first name...">
+						</p>
+
+						<p>
+							<label>Last Name</label>
+							<input type="text" name="lastName" placeholder="Your last name...">
+						</p>
+
+						<p>
+							<label>Email</label>
+							<input type="email" name="email" placeholder="abc@email.com">
+						</p>
+
+						<p>
+							<label>Gender</label> 
+							<div class="radio">	
+								<input type="radio" name="gender" value="male" checked>Male
+								<input type="radio" name="gender" value="female">Female
+								<input type="radio" name="gender" value="other">Other
+							</div>
+						</p>
+
+						<p>
+							<label>Date of Birth</label> 
+							<input type="date" name="dateObirth">
+						</p>
+
+						<p>
+							<label>Province</label>
+							<select name="province">
+						      <option value="province1">province 1</option>
+						      <option value="province2">province 2</option>
+						      <option value="province3">province 3</option>
+						      <option value="province4">province 4</option>
+						      <option value="province5">province 5</option>
+						      <option value="province6">province 6</option>
+						      <option value="province7">province 7</option>
+						    </select>
+						</p>
+
+						<p>
+					    <label>Comment</label> 
+					    <textarea name="comment" rows="10" cols="30" placeholder="Add a comment..."></textarea>
+						</p>
+
+						<p>
+							<input type="submit" value="Submit">
+						</p>
+					</form>
+					<script>
+						function validateForm() {
+							var firstname = document.forms["messageForm"]["firstName"].value;
+							var lastname = document.forms["messageForm"]["lastName"].value;
+							var email = document.forms["messageForm"]["email"].value;
+							var gender = document.forms["messageForm"]["gender"].value;
+							var dob = document.forms["messageForm"]["dateObirth"].value;
+							var province = document.forms["messageForm"]["province"].value;
+							var comment = document.forms["messageForm"]["comment"].value;
+
+							if (firstname == "" || lastname == "" || email == "" || dob == "" ||   comment == ""){
+								alert("Please fill all the fields before submitting!!");
+							}
+							else {
+								alert("Welcome to our family.");
+							}
+						}
+					</script>
+				</div>
+			</div>
+
+
+			<!--footer of the our page-->
+			<div class= footer>
+				<footer>
+					<div class="contact">
+						<h3>contact</h3>
+						<p>You can fell free to contact us. We are always at your service. You might as well feel the <a href="contact.html">form</a> to get connected with us.</p>
+					</div>
+					<!--social medias-->
+		            <div class="social">
+		                <div style="margin-top: 4px">
+		                    <a href="https://www.facebook.com" target="_blank">
+		                        <img src="images/icons/fb.png" alt="facebook" width="35" height="35">
+		                    </a>
+
+		                    <a href="https://www.instagram.com" target="_blank">
+		                        <img src="images/icons/ig.png" alt="instagram" width="35" height="35">
+		                    </a>
+
+		                    <a href="https://twitter.com" target="_blank">
+		                        <img src="images/icons/twt.png" alt="twitter" width="35" height="35">
+		                    </a>
+
+		                    <a href="https://www.youtube.com" target="_blank">
+		                        <img src="images/icons/yt.png" alt="youtube" width="35" height="35">
+		                    </a>
+		                </div>
+		            </div>
+
+		            <div class="copyright">
+		            	<p><a href="www.hactoberfest.digitalocean.com" target="_blank"><strong>Hactober Fest</strong></a></p>
+		            </div>
+				</footer>
+			</div>
+		</div>
+	</body>
+
+</html>

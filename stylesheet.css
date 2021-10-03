@@ -1,0 +1,177 @@
+/*This is the CSS for our project*/
+/*Defined for whole and all pages page*/
+* {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+body {
+	background: #f2f2f2;
+}
+
+/*header*/
+.header {
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)) ,url("images/headerbg.jpg") no-repeat center top;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+.logo {
+	float: left;
+	padding-left: 2px;
+	padding-top: 16px;
+}
+
+.logo img{
+	height: 120px;
+	width: 350px;
+}
+
+.nav{
+	float:right;
+	height: 45px;
+	background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(46,62,78,0.7)) ;
+	padding-right: 30px;
+	padding-top: 16px;
+	border-radius: 0px 0px 40px 40px;
+}
+.nav ul li{
+	display: inline-block;
+	padding: 5px 15px 0px 15px;
+}
+.nav ul li a{
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: width 1000s;
+}
+
+.nav ul li a:hover {
+	font-size: 1.5em;
+	height: 40px;
+	color: #9b6dff;
+}
+
+.nav ul li a.active {
+	color: #9b6dff;
+	font-weight: bold;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/*Navigation effect*/
+.nav-effect a {
+	overflow: hidden;
+}
+
+.nav-effect a  {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.nav-effect a :before {
+	position: absolute;
+	top: 100%;
+
+}
+ /*Welcome Text*/
+.welcome h1{
+	color: #f2f2f2;
+	font-size: 2em;
+	font-family: helvetica;
+	text-align: center;
+	line-height: 500px; 
+}
+
+span {
+	opacity: 0;
+	transition: all 3s ease ;
+}
+
+span.fade {
+	opacity: 1;
+}
+/*End of header*/
+
+/*footer*/
+.footer {
+	background-color : #2e3e4e;        
+	padding: 40px 0px;
+	height: 200px;
+}
+
+/*contact*/
+.contact {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+.contact h3 {
+	font-size: 1.5em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #9b6dff;
+}
+.contact p {
+	line-height: 1.5em;
+	font-size: 15px;
+	color: #fefefe;
+	padding: 25px 0;
+}
+.contact a {
+	color: #b99aff;
+	text-decoration-line: none;
+}
+
+/*social sites style*/
+.social {
+    text-align: center;
+    overflow: hidden; 
+}
+
+.social a {
+    text-decoration: none;
+    padding:  10px; 
+}
+
+/*Copyright*/
+.copyright {
+	margin-top: 20px;
+}
+
+.copyright p {
+	color: white;
+	text-align: center;
+}
+
+.copyright strong {
+	color: orange;
+}
+
+.copyright a {
+	text-decoration-line: none;
+}
+
+/*End of footer*/
+
